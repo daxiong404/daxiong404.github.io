@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" manifest="app.manifest">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Travling!</title>
+		<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#owl-demo').owlCarousel({
+					items: 1,
+					autoPlay: true,
+					stopOnHover: true,
+					afterInit: function() {
+						var $t = $('.owl-pagination span');
+						$t.each(function(i) {
+							$(this).before('<img src="img/t' + (i + 1) + '.jpg">');
+						})
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body background="img/009.jpg" style="background-repeat: no-repeat;background-size:cover">
+
+		<form method="post" action="check.php">
+			<div align="center">
+				<h1 style="color:darkorange;">Going to Tour!
+				</h1>
+				<div style="align-content:flex-end;">
+
+					<input style="width:280px; height:30px;" id="accountname" value="" name="accountname" title="user name" maxlength="320" type="test" placeholder="User name" />
+					<br>
+					<br>
+					<input style="width:280px; height:30px;" id="password" value="" name="password" title="passWord" maxlength="320" type="password" placeholder="Password" />
+					<br>
+					<br>
+					<button style="width:280px; height:30px;" type="submit" name="submit" id="submit">登录</button>
+					<br>
+		</form>
+		<br>
+		<a href="Createaccount.php"><strong>没有账户，点击注册！</strong></a>
+		</div>
+		</div>
+		<div align="center">
+			<!--效果html开始-->
+			<br>
+			<br>
+			<div id="owl-demo" class="owl-carousel">
+				<div class="itme">
+					<ul>
+						<li class="li1">
+							<a href="homepagepoint1.html">
+								<img src="img/t1.jpg" alt="">
+							</a>
+							<div class="txt">
+								<h3>BaliIsland</h3>
+								<p></p>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="itme">
+					<ul>
+						<li class="li1">
+							<a href="homepagepoint2.html">
+								<img src="img/t2.jpg" alt="">
+							</a>
+							<div class="txt">
+								<h3>HongKong</h3>
+
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="itme">
+					<ul>
+						<li class="li1">
+							<a href="homepagepoint3.html">
+								<img src="img/t3.jpg" alt="">
+							</a>
+							<div class="txt">
+								<h3>Lasha</h3>
+
+							</div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="itme">
+					<ul>
+						<li class="li1">
+							<a href="homepagepoint4.html">
+								<img src="img/t4.jpg" alt="">
+							</a>
+							<div class="txt">
+								<h3>Singapore</h3>
+
+							</div>
+						</li>
+						< </ul>
+				</div>
+				<div class="itme">
+					<ul>
+						<li class="li1">
+							<a href="homepagepoint5.html">
+								<img src="img/t5.jpg" alt="">
+							</a>
+							<div class="txt">
+								<h3>Yunnan</h3>
+
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+	</body>
+
+</html>
