@@ -1,17 +1,47 @@
+<!--
+ * @Description: 
+ * @Author: 
+ * @Date: 2020-10-29 21:50:59
+ * @LastEditTime: 2020-10-30 01:23:49
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style type="text/css">
-        h1{
-            text-align: center;
-            font-size: 50px;
-        }
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>大熊人-Dxr</title>
+	<link rel="stylesheet" href="css/button.css">
+	<!-- 添加背景音乐 -->
+	<audio id="music" src="https://music.163.com/#/song?id=476625725" autoplay="autoplay" preload="auto" loop="loop">该浏览器不支持audio属性</audio>	
 </head>
-<body>
-    <h1>大熊人</h1>
-	<h2>3565765357@qq.com</h2>
+<body bgcolor="#000000">
+
+	<h1>大熊人</h1>
+	<div align="center">
+		<img src="img/dxr.jpg" width="20%" >
+	</div>
+	<h2>Email：3565765357@qq.com</h2>
+	<div class="button-group">
+		<button id="btn1" class="login-btn" onclick="window.location.href='https://codechina.csdn.net/DaXiongRen/learningdatastructure-algorithm'">
+			CodeChina  >>>
+		</button>
+	</div>
+	
+	<div class="button-group">
+	
+		<button id="btn2" class="login-btn" onclick="window.location.href='https://github.com/DaXiongRen'">
+			GitHub  >>>
+		</button>
+	
+	</div>
 </body>
 </html>
+
+<script>
+    document.getElementById('btn1').onmouseover = function(){this.style.background = '#3CF'}
+    document.getElementById('btn1').onmouseout = function(){this.style.background = '#00cc99'}
+</script>
+
+<script>
+    document.getElementById('btn2').onmouseover = function(){this.style.background = '#3CF'}
+    document.getElementById('btn2').onmouseout = function(){this.style.background = '#00cc99'}
+</script>
