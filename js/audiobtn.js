@@ -1,0 +1,45 @@
+/*
+ * @Description: 
+ * @Author: 
+ * @Date: 2020-10-31 16:29:19
+ * @LastEditTime: 2020-10-31 17:46:59
+ */
+function audioAutoPlay(id) {
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+        audio.play();
+    }, false);
+}
+audioAutoPlay('audio');
+
+$(function() {
+    var audio = $('#media');
+    audio[0].play();
+    $("#audio_btn").bind('click', function() {
+        $(this).hasClass("off") ? ($(this).addClass("play_yinfu").removeClass("off"), $("#yinfu").addClass("rotate"), $("#media")[0].play()) : ($(this).addClass("off").removeClass("play_yinfu"), $("#yinfu").removeClass("rotate"),
+$("#media")[0].pause());
+    });
+
+});
+
+
+//--创建页面监听，等待微信端页面加载完毕 触发音频播放
+document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+//--创建触摸监听，当浏览器打开页面时，触摸屏幕触发事件，进行音频播放
+document.addEventListener('touchstart', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('audio');
+            audio.play();
+    }
+    audioAutoPlay();
+});
