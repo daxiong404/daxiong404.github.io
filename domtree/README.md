@@ -2,7 +2,7 @@
 
 节日快乐！用 HTML 表单画一棵旋转的圣诞树！
 
-[点击查看页面效果](daxiongren.github.io)
+[点击查看页面效果](https://daxiongren.github.io/domtree/index.html)
 
 # License
 
