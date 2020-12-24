@@ -2,7 +2,7 @@ const width = 600;
 const height = 550;
 const quantity = 170;
 const types = [ 'text', 'select', 'progress', 'meter', 'button', 'radio', 'checkbox' ];
-const greetings = [ '我的家人们','圣诞节快乐','每天都开开心心','快快乐乐','我的家人们','圣诞节快乐','祝收到圣诞老人的礼物','节日快乐','玩得开心','节日快乐','生活愉快', '圣诞节快乐','节日快乐','祝一切顺利','节日的问候','节日快乐','生活愉快','工作顺利' ];
+const greetings = [ '我的家人们','圣诞节快乐','每天都开开心心','身体健康','我的家人们','圣诞节快乐','祝收到圣诞老人的礼物','节日快乐','玩得开心','节日快乐','生活愉快', '圣诞节快乐','节日快乐','祝一切顺利','节日的问候','节日快乐','生活愉快','工作顺利' ];
 
 let tree = document.querySelector( '.tree' ),
 	treeRotation = 0;
